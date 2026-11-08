@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("baike-theme");
+        if (theme !== "light" && theme !== "dark") theme = "dark";
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (err) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
+  <title>百科导航</title>
+  <meta name="description" content="一个轻量的中文网址导航，收录搜索、开发、学习和日常会用到的网站。">
+  <meta name="theme-color" content="#10120f">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <a class="skip" href="#catalog">跳到目录</a>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="index.html">
+          <span class="seal" aria-hidden="true">百</span>
+          <span class="brand-text">
+            <span class="brand-line">
+              <h1 id="site-title">百科导航</h1>
+            </span>
+            <p id="site-sub">常用网站，随手打开</p>
+          </span>
+        </a>
+        <form class="search" id="search-form" role="search">
+          <label class="sr-only" for="q">搜索名称、简介或标签</label>
+          <input id="q" type="search" placeholder="搜索本站，回车则搜全网" autocomplete="off" enterkeyhint="search">
+          <div class="search-actions">
+            <button type="button" class="btn btn-tiny btn-ghost" id="clear-q" hidden>清除</button>
+            <label class="sr-only" for="engine">外部搜索引擎</label>
+            <select id="engine" aria-label="外部搜索引擎">
+              <option value="google">Google</option>
+              <option value="bing">Bing</option>
+              <option value="baidu">百度</option>
+              <option value="duckduckgo">DuckDuckGo</option>
+            </select>
+            <button type="submit" class="btn btn-primary" title="用所选引擎打开新标签页">外部搜索</button>
+          </div>
+        </form>
+        <button type="button" class="theme-btn" id="theme-toggle" data-theme-toggle aria-label="切换到浅色主题"></button>
+      </div>
+    </header>
+
+    <div class="shell" id="shell">
+      <aside class="rail rail-left" id="rail-left" hidden></aside>
+      <nav class="menu" id="menu" aria-label="分类"></nav>
+      <main class="catalog" id="catalog" tabindex="-1">
+        <p class="lead" id="lead" hidden></p>
+        <p class="result-meta" id="result-meta" aria-live="polite" hidden></p>
+        <div id="sections"><p class="loading">正在读取目录…</p></div>
+        <p class="empty" id="empty" hidden></p>
+      </main>
+      <aside class="rail rail-right" id="rail-right" hidden></aside>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>
+          <strong id="foot-title">百科导航</strong>
+          <p class="footer-note" id="foot-note"></p>
+        </div>
+        <div id="friend-block" hidden>
+          <h2>友情链接</h2>
+          <ul class="friends" id="friend-list"></ul>
+        </div>
+        <div class="foot-side">
+          <a href="admin.html">编辑内容</a>
+          <span id="year"></span>
+        </div>
+      </div>
+    </footer>
+    <button type="button" class="to-top" id="to-top" hidden>回到顶部</button>
+  </div>
+
+  <script src="assets/js/model.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

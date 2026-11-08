@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("baike-theme");
+        if (theme !== "light" && theme !== "dark") theme = "dark";
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (err) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
+  <title>编辑内容 · 百科导航</title>
+  <meta name="description" content="在浏览器里编辑百科导航的链接，并导出 sites.json。">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#10120f">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+<body>
+  <p class="loading page-loading" id="booting">正在打开编辑器…</p>
+
+  <div class="modal-screen" id="pass-gate" hidden>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="pass-title">
+      <span class="seal" aria-hidden="true">百</span>
+      <p class="age-kicker">百科导航</p>
+      <h1 id="pass-title">输入管理口令</h1>
+      <p>这只是浏览器里的一道门槛。口令写在脚本里，不能代替服务器上的访问控制。</p>
+      <form class="pass-form" id="pass-form">
+        <label class="sr-only" for="pass">口令</label>
+        <input id="pass" type="password" autocomplete="current-password" required>
+        <p class="form-error" id="pass-error" hidden>口令不正确。</p>
+        <button class="btn btn-primary" type="submit">进入</button>
+      </form>
+      <p><a href="index.html">返回前台</a></p>
+    </div>
+  </div>
+
+  <div id="editor" hidden>
+    <header class="studio-top">
+      <a class="brand" href="index.html">
+        <span class="seal" aria-hidden="true">百</span>
+        <span class="studio-id">
+          <span class="brand-line">
+            <h1>编辑内容</h1>
+          </span>
+          <span class="brand-sub" id="stats">百科导航</span>
+        </span>
+      </a>
+      <div class="studio-tools">
+        <button type="button" class="theme-btn" data-theme-toggle aria-label="切换到浅色主题"></button>
+        <button type="button" class="btn btn-ghost" id="reload">重新读取</button>
+        <button type="button" class="btn btn-ghost" id="import-btn">导入 JSON</button>
+        <input id="import-file" type="file" accept="application/json,.json" hidden>
+        <button type="button" class="btn btn-ghost" id="preview">预览草稿</button>
+        <button type="button" class="btn btn-primary" id="export">导出 sites.json</button>
+      </div>
+    </header>
+    <p class="persist-hint">修改只存在于这次打开的页面里。导出后，用下载的 sites.json 覆盖仓库里的 data/sites.json，再推送到 main，GitHub Pages 才会更新。按 Ctrl+S（macOS 为 ⌘S）也可以导出。</p>
+    <p class="status" id="status" role="status"></p>
+    <div class="studio-wrap">
+      <nav class="studio-nav" aria-label="编辑分区">
+        <a href="#panel-site">站点信息</a>
+        <a href="#panel-cats">分类与链接</a>
+        <a href="#panel-friends">友情链接</a>
+        <a href="#panel-ads">广告位</a>
+      </nav>
+      <div id="studio"></div>
+    </div>
+  </div>
+
+  <noscript><p class="loading page-loading">编辑器需要启用 JavaScript。</p></noscript>
+  <script src="assets/js/model.js"></script>
+  <script src="assets/js/admin.js"></script>
+</body>
+</html>

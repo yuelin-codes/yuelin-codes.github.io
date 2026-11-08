@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/">
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("baike-theme");
+        if (theme !== "light" && theme !== "dark") theme = "dark";
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (err) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
+  <title>页面不存在 · 百科导航</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#10120f">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <main class="missing">
+    <span class="seal" aria-hidden="true">百</span>
+    <h1>没有找到这个页面</h1>
+    <p>地址可能写错了，或者这一页已经挪走。</p>
+    <a class="btn btn-primary" href="index.html">返回首页</a>
+  </main>
+</body>
+</html>
