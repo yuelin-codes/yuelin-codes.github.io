@@ -1,0 +1,371 @@
+{
+  "site": {
+    "title": "百科导航",
+    "subtitle": "常用网站，随手打开",
+    "description": "一个轻量的中文网址导航，收录搜索、开发、学习和日常会用到的网站。",
+    "footerNote": "点开卡片会前往对方网站，页面内容由对方提供。分类和链接可以在「编辑内容」里调整。"
+  },
+  "categories": [
+    {
+      "id": "tools",
+      "name": "常用工具",
+      "blurb": "搜索、翻译、地图，每天都会打开的几个。",
+      "links": [
+        {
+          "name": "百度",
+          "url": "https://www.baidu.com",
+          "icon": "https://www.google.com/s2/favicons?domain=www.baidu.com&sz=64",
+          "description": "中文网页搜索。",
+          "tags": ["搜索", "常用"]
+        },
+        {
+          "name": "Google",
+          "url": "https://www.google.com",
+          "icon": "https://www.google.com/s2/favicons?domain=www.google.com&sz=64",
+          "description": "全球网页搜索。",
+          "tags": ["搜索", "常用"]
+        },
+        {
+          "name": "维基百科",
+          "url": "https://zh.wikipedia.org",
+          "icon": "https://www.google.com/s2/favicons?domain=zh.wikipedia.org&sz=64",
+          "description": "开放的中文百科全书。",
+          "tags": ["百科", "资料"]
+        },
+        {
+          "name": "Google 翻译",
+          "url": "https://translate.google.com",
+          "icon": "https://www.google.com/s2/favicons?domain=translate.google.com&sz=64",
+          "description": "在线翻译一百多种语言。",
+          "tags": ["翻译", "工具"]
+        },
+        {
+          "name": "有道词典",
+          "url": "https://dict.youdao.com",
+          "icon": "https://www.google.com/s2/favicons?domain=dict.youdao.com&sz=64",
+          "description": "中英词典、例句和发音。",
+          "tags": ["词典", "英语"]
+        },
+        {
+          "name": "高德地图",
+          "url": "https://www.amap.com",
+          "icon": "https://www.google.com/s2/favicons?domain=www.amap.com&sz=64",
+          "description": "查路线、公交和地点。",
+          "tags": ["地图", "出行"]
+        }
+      ],
+      "subcategories": []
+    },
+    {
+      "id": "dev",
+      "name": "开发者",
+      "blurb": "写代码时会反复打开的文档和社区。",
+      "links": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com",
+          "icon": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+          "description": "代码托管、协作和开源项目。",
+          "tags": ["代码", "开源"]
+        },
+        {
+          "name": "MDN Web Docs",
+          "url": "https://developer.mozilla.org/zh-CN/",
+          "icon": "https://www.google.com/s2/favicons?domain=developer.mozilla.org&sz=64",
+          "description": "HTML、CSS 和 JavaScript 文档。",
+          "tags": ["文档", "Web"]
+        },
+        {
+          "name": "Stack Overflow",
+          "url": "https://stackoverflow.com",
+          "icon": "https://www.google.com/s2/favicons?domain=stackoverflow.com&sz=64",
+          "description": "程序员问答社区。",
+          "tags": ["问答", "编程"]
+        },
+        {
+          "name": "npm",
+          "url": "https://www.npmjs.com",
+          "icon": "https://www.google.com/s2/favicons?domain=www.npmjs.com&sz=64",
+          "description": "JavaScript 包的注册表。",
+          "tags": ["包", "JavaScript"]
+        },
+        {
+          "name": "菜鸟教程",
+          "url": "https://www.runoob.com",
+          "icon": "https://www.google.com/s2/favicons?domain=www.runoob.com&sz=64",
+          "description": "中文编程入门教程。",
+          "tags": ["教程", "入门"]
+        }
+      ],
+      "subcategories": [
+        {
+          "id": "dev-docs",
+          "name": "参考文档",
+          "links": [
+            {
+              "name": "W3C",
+              "url": "https://www.w3.org",
+              "icon": "https://www.google.com/s2/favicons?domain=www.w3.org&sz=64",
+              "description": "Web 标准组织的官网。",
+              "tags": ["标准", "文档"]
+            },
+            {
+              "name": "Can I use",
+              "url": "https://caniuse.com",
+              "icon": "https://www.google.com/s2/favicons?domain=caniuse.com&sz=64",
+              "description": "查浏览器是否支持某个特性。",
+              "tags": ["兼容", "浏览器"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "name": "AI 工具",
+      "blurb": "对话助手和模型社区。",
+      "links": [
+        {
+          "name": "ChatGPT",
+          "url": "https://chatgpt.com",
+          "icon": "https://www.google.com/s2/favicons?domain=chatgpt.com&sz=64",
+          "description": "OpenAI 的对话助手。",
+          "tags": ["对话", "AI"]
+        },
+        {
+          "name": "Claude",
+          "url": "https://claude.ai",
+          "icon": "https://www.google.com/s2/favicons?domain=claude.ai&sz=64",
+          "description": "Anthropic 的对话助手。",
+          "tags": ["对话", "AI"]
+        },
+        {
+          "name": "Gemini",
+          "url": "https://gemini.google.com",
+          "icon": "https://www.google.com/s2/favicons?domain=gemini.google.com&sz=64",
+          "description": "Google 的 Gemini。",
+          "tags": ["对话", "AI"]
+        },
+        {
+          "name": "DeepSeek",
+          "url": "https://chat.deepseek.com",
+          "icon": "https://www.google.com/s2/favicons?domain=chat.deepseek.com&sz=64",
+          "description": "深度求索的对话助手。",
+          "tags": ["对话", "AI"]
+        },
+        {
+          "name": "Kimi",
+          "url": "https://kimi.moonshot.cn",
+          "icon": "https://www.google.com/s2/favicons?domain=kimi.moonshot.cn&sz=64",
+          "description": "月之暗面的长文本助手。",
+          "tags": ["对话", "AI"]
+        },
+        {
+          "name": "Hugging Face",
+          "url": "https://huggingface.co",
+          "icon": "https://www.google.com/s2/favicons?domain=huggingface.co&sz=64",
+          "description": "开源模型、数据集和演示。",
+          "tags": ["模型", "开源"]
+        }
+      ],
+      "subcategories": []
+    },
+    {
+      "id": "learn",
+      "name": "学习资料",
+      "blurb": "课程和公开课，按主题慢慢看。",
+      "links": [
+        {
+          "name": "中国大学MOOC",
+          "url": "https://www.icourse163.org",
+          "icon": "https://www.google.com/s2/favicons?domain=www.icourse163.org&sz=64",
+          "description": "国内高校的公开课。",
+          "tags": ["课程", "大学"]
+        },
+        {
+          "name": "国家智慧教育平台",
+          "url": "https://www.smartedu.cn",
+          "icon": "https://www.google.com/s2/favicons?domain=www.smartedu.cn&sz=64",
+          "description": "教育部的教育资源平台。",
+          "tags": ["课程", "教育"]
+        },
+        {
+          "name": "Coursera",
+          "url": "https://www.coursera.org",
+          "icon": "https://www.google.com/s2/favicons?domain=www.coursera.org&sz=64",
+          "description": "国际大学课程，可旁听。",
+          "tags": ["课程", "英语"]
+        },
+        {
+          "name": "可汗学院",
+          "url": "https://zh.khanacademy.org",
+          "icon": "https://www.google.com/s2/favicons?domain=zh.khanacademy.org&sz=64",
+          "description": "免费的基础学科练习和讲解。",
+          "tags": ["课程", "基础"]
+        }
+      ],
+      "subcategories": [
+        {
+          "id": "learn-en",
+          "name": "英语学习",
+          "links": [
+            {
+              "name": "BBC Learning English",
+              "url": "https://www.bbc.co.uk/learningenglish",
+              "icon": "https://www.google.com/s2/favicons?domain=www.bbc.co.uk&sz=64",
+              "description": "听力、语法和短课程。",
+              "tags": ["英语", "听力"]
+            },
+            {
+              "name": "剑桥词典",
+              "url": "https://dictionary.cambridge.org",
+              "icon": "https://www.google.com/s2/favicons?domain=dictionary.cambridge.org&sz=64",
+              "description": "英英、英汉释义和发音。",
+              "tags": ["词典", "英语"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "name": "设计素材",
+      "blurb": "图、图标、字体和配色。",
+      "links": [
+        {
+          "name": "Unsplash",
+          "url": "https://unsplash.com",
+          "icon": "https://www.google.com/s2/favicons?domain=unsplash.com&sz=64",
+          "description": "可免费使用的摄影图。",
+          "tags": ["图片", "免费"]
+        },
+        {
+          "name": "Pexels",
+          "url": "https://www.pexels.com",
+          "icon": "https://www.google.com/s2/favicons?domain=www.pexels.com&sz=64",
+          "description": "免费图片和短视频素材。",
+          "tags": ["图片", "视频"]
+        },
+        {
+          "name": "iconfont",
+          "url": "https://www.iconfont.cn",
+          "icon": "https://www.google.com/s2/favicons?domain=www.iconfont.cn&sz=64",
+          "description": "阿里巴巴矢量图标库。",
+          "tags": ["图标", "矢量"]
+        },
+        {
+          "name": "Figma",
+          "url": "https://www.figma.com",
+          "icon": "https://www.google.com/s2/favicons?domain=www.figma.com&sz=64",
+          "description": "协作做界面和原型。",
+          "tags": ["设计", "界面"]
+        },
+        {
+          "name": "Google Fonts",
+          "url": "https://fonts.google.com",
+          "icon": "https://www.google.com/s2/favicons?domain=fonts.google.com&sz=64",
+          "description": "开源字体，可直接引用。",
+          "tags": ["字体", "免费"]
+        },
+        {
+          "name": "Coolors",
+          "url": "https://coolors.co",
+          "icon": "https://www.google.com/s2/favicons?domain=coolors.co&sz=64",
+          "description": "快速生成一组配色。",
+          "tags": ["配色", "设计"]
+        }
+      ],
+      "subcategories": []
+    },
+    {
+      "id": "media",
+      "name": "影音娱乐",
+      "blurb": "视频、音乐和书影音记录。",
+      "links": [
+        {
+          "name": "哔哩哔哩",
+          "url": "https://www.bilibili.com",
+          "icon": "https://www.google.com/s2/favicons?domain=www.bilibili.com&sz=64",
+          "description": "视频、番剧和知识区。",
+          "tags": ["视频", "弹幕"]
+        },
+        {
+          "name": "YouTube",
+          "url": "https://www.youtube.com",
+          "icon": "https://www.google.com/s2/favicons?domain=www.youtube.com&sz=64",
+          "description": "全球视频平台。",
+          "tags": ["视频"]
+        },
+        {
+          "name": "腾讯视频",
+          "url": "https://v.qq.com",
+          "icon": "https://www.google.com/s2/favicons?domain=v.qq.com&sz=64",
+          "description": "剧集、综艺和电影。",
+          "tags": ["视频", "剧集"]
+        },
+        {
+          "name": "豆瓣",
+          "url": "https://www.douban.com",
+          "icon": "https://www.google.com/s2/favicons?domain=www.douban.com&sz=64",
+          "description": "书影音评分和评论。",
+          "tags": ["评论", "电影"]
+        }
+      ],
+      "subcategories": [
+        {
+          "id": "media-music",
+          "name": "音乐",
+          "links": [
+            {
+              "name": "网易云音乐",
+              "url": "https://music.163.com",
+              "icon": "https://www.google.com/s2/favicons?domain=music.163.com&sz=64",
+              "description": "歌单、播客和歌词。",
+              "tags": ["音乐"]
+            },
+            {
+              "name": "Spotify",
+              "url": "https://open.spotify.com",
+              "icon": "https://www.google.com/s2/favicons?domain=open.spotify.com&sz=64",
+              "description": "国际流媒体音乐。",
+              "tags": ["音乐"]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "friends": [
+    {
+      "name": "维基百科",
+      "url": "https://zh.wikipedia.org",
+      "description": "开放百科"
+    },
+    {
+      "name": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/zh-CN/",
+      "description": "Web 文档"
+    },
+    {
+      "name": "中国大学MOOC",
+      "url": "https://www.icourse163.org",
+      "description": "高校公开课"
+    }
+  ],
+  "ads": {
+    "left": {
+      "enabled": false,
+      "title": "左侧公告",
+      "text": "需要时再打开。可以放一张图和一条链接，窄屏会自动隐藏。",
+      "image": "",
+      "url": ""
+    },
+    "right": {
+      "enabled": false,
+      "title": "右侧公告",
+      "text": "和左侧一样，取消「显示」就不会出现在前台。",
+      "image": "",
+      "url": ""
+    }
+  }
+}
