@@ -486,6 +486,16 @@
             "小说",
             "阅读"
           ]
+        },
+        {
+          "name": "www.hssw.net",
+          "url": "https://www.hssw.net",
+          "icon": "https://www.google.com/s2/favicons?domain=www.hssw.net&sz=64",
+          "description": "免费小说在线阅读。",
+          "tags": [
+            "小说",
+            "阅读"
+          ]
         }
       ],
       "subcategories": []
